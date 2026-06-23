@@ -12,10 +12,12 @@ document.getElementById('appointmentForm').addEventListener('submit', function(e
     submitBtn.disabled = true;
 
     const templateParams = {
-        to_name: name,
-        to_email: email, 
-        date: date,
-        time: time
+      const templateParams = {
+    nombre: name,     // Antes decía to_name
+    correo: email,    // Antes decía to_email
+    fecha: date,      // Antes decía date
+    hora: time        // Antes decía time
+};
     };
     emailjs.send('service_0d3ekga','template_xg2y0ar', templateParams)
         .then(function(response) {
