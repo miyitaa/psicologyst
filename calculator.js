@@ -17,7 +17,7 @@ document.getElementById('appointmentForm').addEventListener('submit', function(e
         date: date,
         time: time
     };
-    emailjs.send('2vU1t1EbvESzgsEW9', 'service_0d3ekga', templateParams)
+    emailjs.send('service_0d3ekga','template_xg2y0ar',  templateParams)
         .then(function(response) {
             console.log('¡Correo enviado con éxito!', response.status, response.text);
 
